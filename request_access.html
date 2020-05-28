@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Request Access</title>
+        <meta name="description" content="This is the Request Access page" />
+        <meta name="robots" content="noindex nofollow" /> <!-- do not want page/links to be indexed-->
+        <meta http-equiv="author" content="Daniel Dreise" />
+        <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to not store cache -->
+    </head>
+
+    <body>
+        <h2>Request Access</h2>
+        <form action="php/request_access.php" method="post" id="access">
+            <fieldset>
+                <legend>Contact Details</legend>
+                    <p>First name:  <input type="text" name="firstname"></p>
+                    <p>Last name:   <input type="text" name="lastname"></p>
+                    <p>Email:       <input type="email" name="email"></p>
+
+                    <label><input type="radio" name="student_or_faculty" value="student"> Student </label>
+                    <label><input type="radio" name="student_or_faculty" value="faculty"> Faculty </label>
+
+                    <p>Do you like burritos? 
+                        <select name="burritos">
+                            <option value="no_answer" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </p>
+                    <p>Tell me what you like/dislike about burritos</p>
+                    <textarea type="text" name="comments"></textarea><br />
+                    <input type="submit" value="Submit Request" />
+            </fieldset>
+        </form>
+
+        <p>&copy; Daniel Dreise</p>
+
+    </body>
+</html>
