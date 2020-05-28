@@ -7,12 +7,271 @@
     <body>
         <h1>ESE Project VI - Project Plan</h1>
 
+        <!-- Main Menu -->
+        <hr>
+        <h3>Main Menu</h3>
+        <ul>
+            <li><a href="about.html">About our project</a></li>
+            <li><a href="project_plan.html">Project Plan</a></li>
+            <li><a href="ddreise_logbook.html">Daniel's Logbook</a></li>
+            <li><a href="#">Videos (under construction)</a></li>
+            <li><a href="#">Documents (under construction)</a></li>
+        </ul>
+        <hr>
+        <!-- End of Main Menu -->
+
         <p>This is a default template page for a project plan.<br />
             Following are references and specification sheets.<br />
         </p>
         <ul>
-            <li><a href="/Software_Engineering_Personal/references/">References & Specification Sheets</a></li>
+            <li><a href="/Software_Engineering_Personal/references/Elevator System - Diagram and Shared CAN Protocol.docx">Elevator System - Diagram and Shared CAN Protocol</a></li>
+            <li><a href="/Software_Engineering_Personal/references/EPVI-Weekly-Status-Report.doc">EPVI-Weekly-Status-Report</a></li>
+            <li><a href="/Software_Engineering_Personal/references/Off Campus Remote Connection to Elevators (Updated).pdf">Off Campus Remote Connection to Elevators (Updated)</a></li>
+            <li><a href="/Software_Engineering_Personal/references/Proj-VI_Briefing.pptx">Proj-VI_Briefing</a></li>
+            <li><a href="/Software_Engineering_Personal/references/S6 Project Charter-2020_V-1.6.docx">S6 Project Charter-2020_V-1.6</a></li>
+            <li><a href="/Software_Engineering_Personalreferences/Sample Project Plan Template.xlsx">Sample Project Plan Template</a></li>
         </ul>
+
+        <h2>Gantt Chart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Week 1</th>
+                    <th>Week 2</th>
+                    <th>Week 3</th>
+                    <th>Week 4</th>
+                    <th>Week 5</th>
+                    <th>Week 6</th>
+                    <th>Week 7</th>
+                    <th>Week 8</th>
+                    <th>Week 9</th>
+                    <th>Week 10</th>
+                    <th>Week 11</th>
+                    <th>Week 12</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Create Project Plan</th>
+                    <td>DD</td>
+                </tr>
+                <tr>
+                    <th>Create Project Repository</th>
+                    <td>TA</td>
+                </tr>
+                <tr>
+                    <th>Research Git</th>
+                    <td>DD & JT</td>
+                </tr>
+                <tr>
+                    <th>Create local & remote (server) repositorires for webpage</th>
+                    <td>DD</td>
+                </tr>
+                <tr>
+                    <th>Create webpages (home, about, etc)</th>
+                    <td>Dd & JT</td>
+                </tr>
+                <tr>
+                    <th>Create test plan and document results</th>
+                    <td>TA</td>
+                </tr>
+                <tr>
+                    <th>Create design documentation</th>
+                    <td>TA</td>
+                </tr>
+                <tr>
+                    <th>Explain CAN messaging protocol and demo how filters are set</th>
+                    <td>BH</td>
+                </tr>
+                <tr>
+                    <th>Get CAN working on STM32F303 (test using loopback)</th>
+                    <td>TA & BH</td>
+                </tr>
+                <tr>
+                    <th>Develop elevator station UI</th>
+                    <td></td>
+                    <td>DD</td>
+                </tr>
+                <tr>
+                    <th>Develop elevator car UI</th>
+                    <td></td>
+                    <td>JT & TA & BH</td>
+                </tr>
+                <tr>
+                    <th>Develop and integrate detection functionality for floor location</th>
+                    <td></td>
+                    <td>ALL</td>
+                </tr>
+                <tr>
+                    <th>Testing</th>
+                    <td></td>
+                    <td>ALL</td>
+                </tr>
+                <tr>
+                    <th>Begin design of finite state logic for elevator operation</th>
+                    <td></td>
+                    <td>JT</td>
+                </tr>
+                <tr>
+                    <th>Develop a server program for r/w data on server</th>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4">TA</td>
+                </tr>
+                <tr>
+                    <th>Testing server program for r/w data on server</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td coslpan="2">TA</td>
+                </tr>
+                <tr>
+                    <th>Develop server program for announcing floor number</th>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4">BH</td>
+                </tr>
+                <tr>
+                    <th>Test server program for announcing floor number</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>BH</td>
+                </tr>
+                <tr>
+                    <th>Develop UI for remote control & data logging</th>
+                    <td></td>
+                    <td colspan="4">DD & JT</td>
+                </tr>
+                <tr>
+                    <th>Test UI for remote control & data logging</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">DD & JT</td>
+                </tr>
+                <tr>
+                    <th>Investigate methods for connecting CAN network w/ internet</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>DD</td>
+                </tr>
+                <tr>
+                    <th>Develop connectivity between CAN network & internet</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>DD</td>
+                </tr>
+                <tr>
+                    <th>Implement finite state machine logic</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>JT</td>
+                </tr>
+                <tr>
+                    <th>Implement unique feature</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3">TA</td>
+                </tr>
+                <tr>
+                    <th>Final testing</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">All</td>
+                </tr>
+                <tr>
+                    <th>Video demonstration</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>All</td>
+                </tr>
+                <tr>
+                    <th>Final Demonstration</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>BH</td>
+                    <td></td>
+                    <td>TA</td>
+                </tr>
+                <tr>
+                    <th>Oral Presentation</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>BH</td>
+                </tr>
+            </tbody>
+        </table>
         
     </body>
 </html>
