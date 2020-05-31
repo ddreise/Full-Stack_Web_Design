@@ -1,0 +1,8 @@
+/* Font for body */
+body {font-family: Georgia, serif;}
+
+/* Font for paragraph */
+p,li    {font-size: 100%;}
+h1      {font-size: 160%;}
+h2      {font-size: 125%}
+
