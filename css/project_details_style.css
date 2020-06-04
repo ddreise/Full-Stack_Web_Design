@@ -1,8 +1,18 @@
-/* Font for body */
+/* CSS Style Sheet*/
 body {font-family: Georgia, serif;}
 
-/* Font for paragraph */
-p,li    {font-size: 100%;}
+p,li    {font-size: 100%; line-height: 20px; text-align: left; text-indent: 15px;} 
 h1      {font-size: 160%;}
 h2      {font-size: 125%}
+img     {height: 300px;}
+figcaption {align-items: center; font-style: italic; font-size: 90%; }
 
+.mkgreen{color: green}
+.mkpurple{color: purple}
+.mkunderlined{text-decoration: underline;}
+.mkbold{font-weight: bold;}
+.mkitalic{font-style: italic}
+
+#can {color: purple; font-weight: bold}
+
+#hcs12 {color: purple; font-weight: bold;}

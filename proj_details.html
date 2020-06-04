@@ -11,9 +11,25 @@
 	</head>
 	<body>
 		<h1>Project Details</h1>
+
+
+        <!-- Main Menu -->
+        <hr>
+        <h3>Main Menu</h3>
+        <ul>
+			<li class="h_menu"><a class="menu" href="about.html">About our project</a></li>
+            <li class="h_menu"><a class="menu" href="project_plan.html">Project Plan</a></li>
+            <li class="h_menu"><a class="menu" href="proj_details.html">Project Details</a></li>
+            <li class="h_menu"><a class="menu" href="ddreise_logbook.html">Daniel's Logbook</a></li>
+            <li class="h_menu"><a class="menu" href="#">Videos (under construction)</a></li>
+            <li class="h_menu"><a class="menu" href="#">Documents (under construction)</a></li>
+        </ul>
+        <hr>
+		<!-- End of Main Menu -->
+		
 		<h2>Project Description</h2>
-		<p>The overall project plan (to be completed in <span class="mkunderlined">3 phases</span>) is to build and control an elevator, leveraging the use of a CAN bus communications environment, coupled with networked systems to create a means of tracking the elevator’s operational/diagnostics data. The elevator car’s position and status must also be viewable to computers over the Internet.  See the system diagram, below.
-		The <span class="mkbold">final project demonstration</span> begins with the elevator car at an initial position. As buttons are pressed at each floor, the system will direct the car to service the requests in a safe and controlled manner, subject to requirements for appropriate and predictable speed and acceleration. The system will use a distance sensor to track the car position at all times, determining the distance from the bottom of the elevator shaft, and thus determine the next floor number.  Buttons will be handled over the <span id="can">CAN bus</span>.
+		<p>The overall project plan (to be completed in <span class="mkunderlined mkgreen">3 phases</span>) is to build and control an elevator, leveraging the use of a CAN bus communications environment, coupled with networked systems to create a means of tracking the elevator’s operational/diagnostics data. The elevator car’s position and status must also be viewable to computers over the Internet.  See the system diagram, below.
+		The <span class="mkbold mkgreen">final project demonstration</span> begins with the elevator car at an initial position. As buttons are pressed at each floor, the system will direct the car to service the requests in a safe and controlled manner, subject to requirements for appropriate and predictable speed and acceleration. The system will use a distance sensor to track the car position at all times, determining the distance from the bottom of the elevator shaft, and thus determine the next floor number.  Buttons will be handled over the <span id="can">CAN bus</span>.
 		In the first phase of the project , application of the above mentioned concepts and skills is demonstrated through the specification, design, programming, and testing of an <span id="hcs12">HCS12-based embedded controller</span> (Axeman development unit) or similar for low-level communications between buttons, displays, and sensors (implemented via hardware available in our lab). This controller will communicate with the sensors and call buttons using the CAN bus (see Figure-1). 
 		Each call station will consist of</p>
 		
@@ -30,26 +46,26 @@
 		</ul>
 	
 		<p>The distance sensor will be interfaced directly to the controller to provide a distance estimate, which can be displayed on an LCD or 7-segment LED display and ultimately used for positional feedback. 
-		The elevator <span class="mkbold">motor</span> will interface with the controller via servo electronics.</p>
+		The elevator <span class="mkbold mkgreen">motor</span> will interface with the controller via servo electronics.</p>
 	
 		<figure>
 			<img src="images/fig1.jpg" />   <!--   --> 
 			<figcaption>Figure-1 <br />(Note: Above figure depicts an approximate schematic of the system. Actual implementation may be different from this.)</figcaption>
 		</figure>
 		
-		<p>An additional requirement is that student groups will create a <span class="mkunderlined">common</span> CAN message specification to which all groups will adhere.  The intent is to ensure that any embedded system from one group can be removed and added to another group, with no required changes in embedded software.  
+		<p>An additional requirement is that student groups will create a <span class="mkgreen mkunderlined">common</span> CAN message specification to which all groups will adhere.  The intent is to ensure that any embedded system from one group can be removed and added to another group, with no required changes in embedded software.  
 		</p>
 		
-		<p>The minimal project (in <span class="mkbold">Phase 1</span>) is a CAN network consisting of the controller, the call stations, the distance sensor, and LCD/7 Segment display.  Extra credit projects will extend both the hardware design and the software capabilities to include additional functionality; however, these must be approved by the faculty team prior to embarking on extra credit work. Examples of possible extensions include a passenger on/off detection and counter system to enable the tracking of elevator utilization, or a security camera control system.
+		<p>The minimal project (in <span class="mkbold mkgreen">Phase 1</span>) is a CAN network consisting of the controller, the call stations, the distance sensor, and LCD/7 Segment display.  Extra credit projects will extend both the hardware design and the software capabilities to include additional functionality; however, these must be approved by the faculty team prior to embarking on extra credit work. Examples of possible extensions include a passenger on/off detection and counter system to enable the tracking of elevator utilization, or a security camera control system.
 		</p>
 		
-		<p>In <span class="mkbold">Phase 2</span>, the elevator controller will also interface to a PC on a Local Area Network (LAN), and thence <span class="mkunderlined">to the Internet</span> (see Figure-2). Each group will make its own decision on what type of CAN-LAN interface it wants to implement. Events from the elevator’s operation will be logged (by the controller) to a computer on the LAN (called the Elevator Monitor or EM), which will contain software designed, programmed and tested by the student group. This latter software will consist of two parts: 
+		<p>In <span class="mkbold mkgreen">Phase 2</span>, the elevator controller will also interface to a PC on a Local Area Network (LAN), and thence <span class="mkunderlined mkgreen">to the Internet</span> (see Figure-2). Each group will make its own decision on what type of CAN-LAN interface it wants to implement. Events from the elevator’s operation will be logged (by the controller) to a computer on the LAN (called the Elevator Monitor or EM), which will contain software designed, programmed and tested by the student group. This latter software will consist of two parts: 
 		</p>
 		
 		<ol>
-			<li><span class="mkbold">A data server </span> which will monitor and store data from the controller/CAN network, and</li>
+			<li><span class="mkbold mkgreen">A data server </span> which will monitor and store data from the controller/CAN network, and</li>
 			<li>
-				<span class="mkbold">A diagnostics display program</span> that will collect and display this data on the elevator module or at any other PC connected by a LAN interface to the elevator module. 
+				<span class="mkbold mkgreen">A diagnostics display program</span> that will collect and display this data on the elevator module or at any other PC connected by a LAN interface to the elevator module. 
 				An aspect of elevator control (such as shutting the elevator down completely, or requesting the elevator via a phone app rather than the floor button) will be included.
 				Finally, in Phase 2, software will be developed to retrieve elevator status information from the elevator module, over an Internet connection.
 			</li>
@@ -60,7 +76,7 @@
 			<figcaption>Figure-2 <br />(Note: Above figure depicts an approximate schematic of the system. Actual implementation may be different from this.)</figcaption>
 		</figure>
 		
-		<p>In <span class="mkbold">Phase 3</span> the two modules (developed in phases 1 and 2) will be integrated to complete the system. This phase also encourages each student group to incorporate features that are not specifically stated in this charter document. This phase includes a final demonstration, oral presentation and report.
+		<p>In <span class="mkbold mkgreen">Phase 3</span> the two modules (developed in phases 1 and 2) will be integrated to complete the system. This phase also encourages each student group to incorporate features that are not specifically stated in this charter document. This phase includes a final demonstration, oral presentation and report.
 		Students will work in groups of three or four students (if applicable).</p>
 		
 		<h2>Milestones</h2>
@@ -91,7 +107,7 @@
 			<tbody></tbody>
 			<tfoot></tfoot>
 		</table>
-		<p>Copyright &copy 2017 Michael Galle</p>
+		<p>Copyright &copy 2017 Michael Galle (modified by Daniel Dreise)</p>
 	</body>
 </html>
  
