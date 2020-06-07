@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<!--[if lt IE 9]>
+    <script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script>
+<![endif] -->
+
 <html lang="en">
     
     <head>
@@ -33,13 +38,24 @@
         <form action="php/request_access.php" method="post" id="access">
             <fieldset>
                 <legend>Contact Details</legend>
-                    <p>First name:  <input type="text" name="firstname"></p>
-                    <p>Last name:   <input type="text" name="lastname"></p>
-                    <p>Email:       <input type="email" name="email"></p>
-
-                    <label><input type="radio" name="student_or_faculty" value="student"> Student </label>
-                    <label><input type="radio" name="student_or_faculty" value="faculty"> Faculty </label>
-
+                    <div>
+                        <label class="text_label">First name:</label>
+                        <input class="text_input" type="text" name="firstname"/>
+                    </div>
+                    <div>
+                        <label class="text_label">Last name:</label>
+                        <input class="text_input" type="text" name="firstname"/>
+                    </div>
+                    <div>
+                        <label class="text_label">Email:</label>
+                        <input class="text_input" type="email" name="email"/>
+                    </div>
+                    <div>
+                        <label class="text_label">Designation:</label>
+                        <label><input type="radio" name="student_or_faculty" value="student"> Student </label>
+                        <label><input type="radio" name="student_or_faculty" value="faculty"> Faculty </label>
+                    </div>
+            </fieldset>
                     <p>Do you like burritos? 
                         <select name="burritos">
                             <option value="no_answer" selected></option>
@@ -49,8 +65,7 @@
                     </p>
                     <p>Tell me what you like/dislike about burritos</p>
                     <textarea type="text" name="comments"></textarea><br />
-                    <input type="submit" value="Submit Request" />
-            </fieldset>
+                    <input id="submit" type="submit" value="Submit Request" />
         </form>
 
         <p>&copy; Daniel Dreise</p>
