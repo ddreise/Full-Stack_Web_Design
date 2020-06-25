@@ -18,9 +18,9 @@
     </head>
 
     <body>
-        <form action="php/login.php" method="post">
+        <form action="php/login.php" method="POST"> <!-- Could also use GET -->
             <h2>Login</h2>
-            <p>Username: <input type="text" name="username" /> </p>
+            <p>Username: <input type="text"     name="username" /> </p>         <!--"name" is the key in the post array-->
             <p>Password: <input type="password" name="password" required/> </p>
             <input type="submit" value="Log In" />
             <p><a href="request_access.html" id="request_access">Request Access</a></p>
