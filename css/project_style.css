@@ -3,19 +3,65 @@
 /* Display menu horizontally */
 li.h_menu {display: inline}
 
+/* Table Formatting */
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px; 
+    empty-cells: show;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height:50px;
+    background-color: rgb(81, 115, 148);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.gantt_bh {
+    background-color: teal;
+}
+
+.gantt_dd {
+    background-color: darkorange;
+}
+
+.gantt_jt {
+    background-color: darkseagreen;
+}
+
+.gantt_ta {
+    background-color: lightgreen;
+}
+
 /* Center body on page with border */
-body {width: 950px; border: 2px solid black; padding: 10px 10px; overflow: scroll; margin: auto}
+body {
+    width: 950px; 
+    border: 2px solid black; 
+    padding: 10px 30px; 
+    overflow: scroll; 
+    margin: auto;
+    padding-top: 60px;
+}
 
-/* Center images on page */
-/* img {display: block; margin: auto; width: 50%} */
+/* So navbar doesn't cover top of page content */
+@media (max-width:979px){
+    body{
+        padding-top:0px;
+    }
+}
 
-/* Add borders to figure and image elements */
-/* img {border: 2px solid blue} */
-/* figure {border: 2px solid green} */
-
-/* Add box shadow to the figure and images */
-/* img {box-shadow: 10px 10px 5px gray; border-radius: 5px;}
-figure {border-radius: 25px;} */
+/* Navbar */
+.navbar-brand {
+    padding-right: 10px;
+}
 
 /* Align user label */
 .text_label {
@@ -38,13 +84,17 @@ div {
     padding:    10px 0px;
 }
 
+
 /* Legend formatting */
 legend {
     color: white;
     font-weight: bold;
     background-color: slategray;
     border-radius: 5px;
+    text-align: center;
+    margin: 10px;
 }
+
 
 /* Text area resize */
 textarea {
@@ -92,5 +142,65 @@ textarea {
 	top:1px;
 }
 
-       
+.down_arrow {
+    background: url("../images/call_station_downarrow.png");
+    background-size: 80px;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.down_arrow:hover {
+    background-image: url("../images/call_station_downarrow_hover.png");    
+}
+
+.down_arrow:active {
+    background-image: url("../images/call_station_downarrow_hover.png");
+    background-color: lightgreen;
+}
+
+.up_arrow {
+    background: url("../images/call_station_uparrow.png");
+    background-size: 80px;
+    display: flex;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.up_arrow:hover {
+    background-image: url("../images/call_station_uparrow_hover.png");    
+}
+
+.up_arrow:active {
+    background-image: url("../images/call_station_uparrow_hover.png");
+    background-color: lightgreen;
+}
+
+/* Add box shadow to the figure and images */
+img {
+    border-radius:25px;
+}
+
+#queue {
+    border: 2px solid black; 
+
+}
+
+.elevator_door1, .elevator_door2, .elevator_door3 {
+    width: 83px; 
+    height: 108px;
+    background: url('../images/elevator_door_sprite.png') -12px -10px;
+    display: inline-block;
+}
+
+.elevator_door_open1, .elevator_door_open2, .elevator_door_open3 {
+    width: 81px; height: 108px;
+    background: url('css_sprites.png') -113px -10px;
+    display: inline-block;
+}
