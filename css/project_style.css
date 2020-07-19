@@ -96,27 +96,6 @@ legend {
 }
 
 
-/* Text area resize */
-textarea {
-    width: 400px;
-    height: 250px;
-}
-
-/* Submit button format */
-#submit {
-    background-color: green;
-    color: whitesmoke; 
-    height: 25px;
-    border-radius: 5px;
-    
-}
-#submit:active {
-    background: darkslategray;
-    color: whitesmoke;
-    height: 25px;
-    border-radius: 5px;
-}
-
 /* Used random button generator https://www.bestcssbuttongenerator.com/#/2 */
 #request_access {
 	box-shadow: 0px 10px 14px -7px #276873;
@@ -204,3 +183,87 @@ img {
     background: url('css_sprites.png') -113px -10px;
     display: inline-block;
 }
+
+.hot {
+    color: red;
+}
+
+.cool {
+    color: blue;
+}
+
+#usernameFeedback, #passwordFeedback {
+    color: red;
+}
+
+/* Align user label */
+.text_label {
+    font-weight: bold;
+    float: left;
+    width: 160px;
+    text-align: right;
+    padding: 5px 10px 0px 10px;
+}
+
+/* Align user input */
+.text_input {
+    width: 150px;
+    text-align: left;
+    padding: 5px 10px 0px 10px;
+}
+
+/* Divided blocks padding */
+div {
+    padding: 5px 0px;
+}
+
+/* Legend formatting */
+legend {
+    color: white;
+    font-weight: bold;
+    background-color: magenta;
+    border-radius: 5px;
+}
+
+fieldset {
+    border:2px solid black;
+    display: inline-block;      
+}
+
+/* Text area resize */
+textarea {
+    width: 400px;
+    height: 250px;
+}
+
+/* Submit button format */
+#submit {
+    background-color: blue;
+    color: whitesmoke; 
+    height: 50px;
+    width: 150px;
+    border-radius: 5px; 
+}
+
+
+#submit:hover {
+    background: darkblue;
+}
+
+#submit:active {
+    background: darkslategray;
+}
+
+#comments {
+    background-image: url('../images/dans_avatar.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+::placeholder {
+    color: darkgrey;
+}
+
+
+       

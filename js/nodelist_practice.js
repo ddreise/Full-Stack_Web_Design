@@ -9,11 +9,6 @@ if (elements.length >= 1) {
     elements[0].className = 'cool';     // Change the first item class name to
 }
 
-// Change all class names
-var hotItems = document.querySelectorAll('li.hot');
-for (var i = 0; i < hotItems.length; i++){
-    hotItems[i].className = 'cool';             // change all class='hot' to 'cool'
-}
 
 // Turn first item in list into a LINK
 var firstItem = document.getElementById('one');     // Reference to element in DOM tree
@@ -38,4 +33,9 @@ if (firstItem.hasAttribute('class')) {              // Check to make sure it has
     firstItem.removeAttribute('class');             // Remove class
 }
 
-// TODO: Front-End Development 8 - Javascript - Slide 38 --> Two tasks
+// Change all class names
+// Loop through Nodelist and change all classes to 'cool'
+var hotItems = document.querySelectorAll('li.hot');
+for (var i = 0; i < hotItems.length; i++){
+    hotItems[i].className = 'cool';             // change all class='hot' to 'cool'
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Dan's Software Engineering  Quiz 1 code!!! -->
+
+<html lang="en">
+    
+    <head>
+        <title>Request Access</title>
+        <link href="css/project_style.css" type="text/css" rel="stylesheet" /> <!-- Link to CSS stylesheet -->
+    </head>
+
+    <body>
+
+        <h2>Request Access</h2> <!-- Header at the top of the page. Sized to H2 -->
+
+            <fieldset>      <!-- This begins the boxed in area under Contact Details -->
+                <legend>Contact Details</legend>        <!-- This is the top label for the fieldset area -->
+                    <div>
+                        <label class="text_label">First name:</label>                   <!-- Each label has a class linked to CSS styling -->
+                        <input class="text_input" type="text" name="firstname"/>        <!-- Each input box has a class linked to CSS styling -->
+                    </div>
+                    <div>
+                        <label class="text_label">Last name:</label>
+                        <input class="text_input" type="text" name="lastname"/>
+                    </div>
+                    <div>
+                        <label class="text_label">Email:</label>
+                        <input class="text_input" type="email" name="email"/>           <!-- Specified to be of type "email" so an email should be entered here -->
+                    </div>
+                    <div>
+                        <label class="text_label">Website:</label>
+                        <input class="text_input" type="url" name="website"/>           <!-- Specified to be of type url, so it should be a URL entered here-->
+                    </div>
+                    <div>
+                        <label class="text_label">Birth date:</label>
+                        <input class="text_input" type="date" name="birthdate"/>        <!-- Specified to be of type "date" for date input -->
+                    </div>
+                    <div>
+                        <label class="text_label">Request Type:</label>                 <!-- Radio buttons for selection -->
+                        <label><input type="radio" name="student_faculty" value="student"> Faculty </label>
+                        <label><input type="radio" name="student_faculty" value="faculty"> Student </label>
+                    </div>
+                    <div>
+                        <label class="text_label">Do you like tacos?</label>            <!-- Drop down selection menu -->
+                            <select name="tacos">
+                                <option value="no_answer" selected></option>            <!-- These are the options in the drop down. This first one left blank-->
+                                <option value="yes">YES ABSOLUTELY</option>
+                                <option value="no">Ew no</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label class="text_label">If not, please select something you DO like</label>   <!-- Check box selection items-->
+                        <label><input type="checkbox" name="alternate_food" value="pizza">Pizza</label>
+                        <label><input type="checkbox" name="alternate_food" value="pad thai">Pad Thai</label>
+                        <label><input type="checkbox" name="alternate_food" value="fried chicken">Fried Chicken</label>
+                    </div>
+            </fieldset>
+                 
+                    <p>Tell us a bit about yourself</p>
+                    <textarea id="comments" type="text" placeholder="Please enter your comments here ..." name="comments"></textarea><br /> <!-- placeholder is the greyed out text before user types info-->
+                    <input id="submit" type="submit" value="Submit Request"/>                   <!-- This is the submit button, it is linked to a CSS stylesheet, where it will change if hovered over or clicked.-->
+
+        <p>&copy; Daniel Dreise</p> <!-- I forgot to mention this is my video, but the "&copy;" is what makes the copyright symbol  -->
+
+    </body>
+</html>

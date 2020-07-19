@@ -12,6 +12,7 @@
         <meta name="robots" content="noindex nofollow" /> <!-- do not want page/links to be indexed-->
         <meta http-equiv="author" content="Daniel Dreise" />
         <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to not store cache -->
+        <meta charset="utf-8" />
 
         <link href="css/project_style.css" type="text/css" rel="stylesheet" />
 
@@ -34,41 +35,66 @@
         </ul>
         <hr>
         <!-- End of Main Menu -->
+        <div id="content">
+            <form action="php/request_access.php" method="post" id="access">
+                <fieldset>      <!-- This begins the boxed in area under Contact Details -->
+                    <legend>Contact Details</legend>        <!-- This is the top label for the fieldset area -->
+                        <div>
+                            <label class="text_label">First name:</label>                   <!-- Each label has a class linked to CSS styling -->
+                            <input id="firstname" class="text_input" type="text" name="firstname"/>        <!-- Each input box has a class linked to CSS styling -->
+                            <a id="firstNameFeedback"></a>
+                        </div>
+                        <div>
+                            <label class="text_label">Last name:</label>
+                            <input id="lastname" class="text_input" type="text" name="lastname" />
+                            <span id="lastNameFeedback"></span>
+                        </div>
+                        <div>
+                            <label class="text_label">Email:</label>
+                            <input id='email' class="text_input" type="email" name="email" />           <!-- Specified to be of type "email" so an email should be entered here -->
+                        </div>
+                        <div>
+                            <label class="text_label">Website:</label>
+                            <input id='website' class="text_input" type="url" name="website"/>           <!-- Specified to be of type url, so it should be a URL entered here-->
+                        </div>
+                        <div>
+                            <label class="text_label">Birth date:</label>
+                            <input id="birthdate" class="text_input" type="date" name="birthdate"/>        <!-- Specified to be of type "date" for date input -->
+                        </div>
+                        <div>
+                            <label class="text_label">Request Type:</label>                 <!-- Radio buttons for selection -->
+                            <label><input id="student" type="radio" name="student_faculty" value="student"> Faculty </label>
+                            <label><input id="faculty" type="radio" name="student_faculty" value="faculty"> Student </label>
+                        </div>
+                        <div>
+                            <label class="text_label">Do you like tacos?</label>            <!-- Drop down selection menu -->
+                                <select name="tacos">
+                                    <option value="no_answer" selected></option>            <!-- These are the options in the drop down. This first one left blank-->
+                                    <option value="yes">YES ABSOLUTELY</option>
+                                    <option value="no">Ew no</option>
+                                </select>
+                        </div>
+                        <div>
+                            <label class="text_label">If not, please select something you DO like</label>   <!-- Check box selection items-->
+                            <label><input type="checkbox" name="alternate_food" value="pizza">Pizza</label>
+                            <label><input type="checkbox" name="alternate_food" value="pad thai">Pad Thai</label>
+                            <label><input type="checkbox" name="alternate_food" value="fried chicken">Fried Chicken</label>
+                        </div>
+                </fieldset>
 
-        <form action="php/request_access.php" method="post" id="access">
-            <fieldset>
-                <legend>Contact Details</legend>
-                    <div>
-                        <label class="text_label">First name:</label>
-                        <input class="text_input" type="text" name="firstname"/>
-                    </div>
-                    <div>
-                        <label class="text_label">Last name:</label>
-                        <input class="text_input" type="text" name="firstname"/>
-                    </div>
-                    <div>
-                        <label class="text_label">Email:</label>
-                        <input class="text_input" type="email" name="email"/>
-                    </div>
-                    <div>
-                        <label class="text_label">Designation:</label>
-                        <label><input type="radio" name="student_or_faculty" value="student"> Student </label>
-                        <label><input type="radio" name="student_or_faculty" value="faculty"> Faculty </label>
-                    </div>
-            </fieldset>
-                    <p>Do you like burritos? 
-                        <select name="burritos">
-                            <option value="no_answer" selected></option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </p>
-                    <p>Tell me what you like/dislike about burritos</p>
-                    <textarea type="text" name="comments"></textarea><br />
-                    <input id="submit" type="submit" value="Submit Request" />
-        </form>
+                            
+                <p>Tell us a bit about yourself</p>
+                <textarea id="comments" type="text" placeholder="Please enter your comments here ..." name="comments"></textarea><br /> <!-- placeholder is the greyed out text before user types info-->
+                <p id="commentsFeedback"></p>
+                <p id="lastkey"></p>
+                <input id="submit" type="submit" value="Submit Request"/> 
+
+            </form>
+        </div>
 
         <p>&copy; Daniel Dreise</p>
+
+        <script src='js/request_access.js'></script>
 
     </body>
 </html>
